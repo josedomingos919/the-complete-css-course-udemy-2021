@@ -1,0 +1,37 @@
+.container {
+  display: grid;
+  max-width: 900px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-template-rows: repeat(3, 100px);
+  background-color: #000000;
+  gap: 20px;
+}
+
+.container div {
+  background-color: blue;
+  padding: 30px;
+}
+
+.container div:nth-child(even) {
+  background-color: brown;
+}
+
+.one {
+  justify-self: start;
+}
+
+.three {
+  justify-self: end;
+}
+
+.seven {
+  justify-self: end;
+  align-self: end;
+}
+
+.five {
+  align-self: center;
+  justify-self: center;
+}
