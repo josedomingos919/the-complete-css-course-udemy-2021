@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  max-width: 900px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: #000000;
+  gap: 20px;
+  grid-template-areas: 'header header header' 'nav main .' 'nav section section' 'footer footer footer';
+}
+
+.container div {
+  background-color: blue;
+  padding: 30px;
+}
+
+.container div:nth-child(even) {
+  background-color: brown;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
