@@ -1,0 +1,34 @@
+.container {
+  display: grid;
+  max-width: 900px;
+  grid-template-columns: repeat(3, 1fr);
+  /* column-gap: 10px; */
+  margin: auto;
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-template-rows: repeat(3, 300px);
+  background-color: black;
+  /* gap: 20px; */
+  row-gap: 20px;
+}
+
+.container div {
+  background-color: blue;
+  padding: 30px;
+}
+
+.container div:nth-child(even) {
+  background-color: brown;
+}
+
+.subgrid {
+  /* grid-column: 1/4; */
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.subgrid p {
+  background-color: white;
+  padding: 10px;
+}
