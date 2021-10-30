@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  max-width: 900px;
+  /* grid-template-columns: 33.4% 33.4% 33.4% ; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: repeat(9, 1fr); */
+  /* grid-template-columns: repeat(3, calc(100% / 3)); */
+  grid-template-columns: repeat(3, 1fr);
+  /* is better to use 1fr than use percentage 14% */
+  column-gap: 10px;
+  margin: auto;
+}
+
+.container div {
+  background-color: blue;
+  padding: 30px;
+  opacity: 0.3;
+}
+
+.container div:nth-child(even) {
+  background-color: brown;
+}
