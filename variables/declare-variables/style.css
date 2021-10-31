@@ -1,0 +1,20 @@
+:root {
+  --title-color: red;
+  --bg-color: black;
+  --default-border-radius: 20px;
+}
+
+body {
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: var(--default-border-radius);
+  padding: 20px 50px;
+}
+
+.container .item h1 {
+  color: var(--title-color);
+}
